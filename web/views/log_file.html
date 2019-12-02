@@ -11,7 +11,7 @@
                 <table>
                     <tr ng-repeat="(title, content) in line.context">
                         <th>{{ title }}</th>
-                        <td id="clipboard-line-{{ id }}-{{ $index }}">{{ content|nl2br }}</td>
+                        <td id="clipboard-line-{{ id }}-{{ $index }}" class="content">{{ content }}</td>
                         <td>
                             <span ngclipboard data-clipboard-target="#clipboard-line-{{ id }}-{{ $index }}"
                                   ngclipboard-success="clipboardSuccess(e)" ngclipboard-error="clipboardError(e)"
